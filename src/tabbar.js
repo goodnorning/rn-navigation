@@ -9,9 +9,9 @@ class TabBar extends PureComponent{
     }
     static propTypes = {
         activeIndex:PropTypes.number,
-        afterSelect:PropTypes.function,
-        visible:PropTypes.boolean,
-        beforeSelect:PropTypes.function
+        afterSelect:PropTypes.func,
+        visible:PropTypes.bool,
+        beforeSelect:PropTypes.func
     }
     constructor(props){
         super(props)

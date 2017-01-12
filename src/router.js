@@ -65,6 +65,8 @@ class Router extends PureComponent {
             this._navigationActions.popScene()
             return true
         })
+        //回传navigationActions参数
+        this.props.onCallback && this.props.onCallback(this._navigationActions)
     }
     render() {
         const {
